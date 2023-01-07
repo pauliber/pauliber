@@ -1,0 +1,3 @@
+[submodule "website/themes/zola-hallo"]
+	path = website/themes/zola-hallo
+	url = git@github.com:Vrixyz/zola-hallo.git

@@ -1,0 +1,33 @@
+# The URL the site will be built for
+base_url = "https://paulineberger.pro"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# Theme
+theme = "zola-hallo"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+greeting = "Bonjour!"
+
+iam = "Je suis"
+
+links = [
+    { title = "LinkedIn", url = "https://www.linkedin.com/in/pauline-berger-9a07b141", icon = "linkedin" },
+]
+
+[extra.author]
+name = "Pauline"
+
+[extra.theme]
+background = "#6FCDBD"
+foreground = "#FFF"
+hover = "#333"
