@@ -16,16 +16,17 @@ theme = "zola-hallo"
 highlight_code = false
 
 [extra]
-greeting = "Bonjour!"
+greeting = "Formation & Conseil"
+subtitle = "User Acquisition"
 
-iam = "Je suis"
+iam = ""
 
 links = [
     { title = "LinkedIn", url = "https://www.linkedin.com/in/pauline-berger-9a07b141", icon = "linkedin" },
 ]
 
 [extra.author]
-name = "Pauline"
+name = "Pauline BERGER"
 
 [extra.theme]
 background = "#6FCDBD"
