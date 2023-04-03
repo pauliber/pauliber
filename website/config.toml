@@ -23,6 +23,7 @@ iam = ""
 
 links = [
     { title = "LinkedIn", url = "https://www.linkedin.com/in/pauline-berger-9a07b141", icon = "linkedin" },
+    { title = "Mail", url = "mailto:pauline.becret@gmail.com", iconset = "fas", icon = "envelope" },
 ]
 
 [extra.author]
