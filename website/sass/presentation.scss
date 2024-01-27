@@ -15,6 +15,10 @@ html {
   //height: 100%;
 }
 #presentation {
+  color: #fff;
+  font-family: Montserrat,"Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
+  flex-direction: column;
+  display: flex;
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -23,8 +27,6 @@ html {
       local("Montserrat-Regular"),
       url(fonts/Montserrat-Regular.otf) format("opentype")
   } 
-  color: #fff;
-  font-family: Montserrat,"Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
   main {
     margin: 1rem;
     @font-face {
@@ -54,7 +56,8 @@ html {
 
   h2 {
     font-size: 3rem;
-    font-weight: 300
+    font-weight: 300;
+    margin-bottom: 1rem;
   }
 
   @media screen and (max-width: 992px) {
@@ -102,7 +105,7 @@ html {
   }
 
   main .column .links {
-    margin-top: 2.5rem;
+    margin-top: 0rem;
     font-size: 2.5rem;
   }
 
@@ -151,6 +154,10 @@ html {
   }
 }
 
+.articles {
+  display: flex;
+  align-self: center;
+}
 .article-card {
   font-size: 1.5rem;
   border-radius: 20px;
@@ -159,7 +166,7 @@ html {
   border-style: solid;
   padding: 20px;
   height: 180px;
-  width: 300px;
+  width: 320px;
   cursor: pointer;
 }
 .article-card:hover {
@@ -182,15 +189,57 @@ html {
   }
 }
 
+.tagline {
+  font-size: 28px;
+  line-height: 26px;
+}
+
 .article-card:hover .article-card-title h1 {
   color: orange !important
 }
 .article-card-title {
   font-size: 2rem !important;
-  margin: 0 0 20px 0 !important;
+  margin: 0 0 25px 0 !important;
 }
 
 .blog-back {
-  margin: 0 0 0 0;
+  margin: 0 0 0 -20px;
   position: absolute;
+}
+
+.blog-header h1 {
+  margin: 0 0 0 0 0;
+}
+
+.blog-article p {
+  text-align: justify;
+  text-justify: auto;
+}
+.blog-image-left {
+  float:left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.blog-image-right {
+  float:right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+@media (width < 768px) {
+  .blog-image-left {
+    width: 150px;
+  }
+  .blog-image-right {
+    width: 150px;
+  }
+}
+.article-two-columns {
+  flex-direction: column;
+  display: inline-block;
+}
+
+.article-column-left {
+  margin-right: 20px;
+  display: inline-block;
 }
