@@ -1,9 +1,16 @@
 +++
-title = "Articles"
+title = "GROWTH"
 sort_by = "date"
-template = "articles.html"
-page_template = "news-page.html"
+date = 2024-01-29
+template = "blog/page.html"
 insert_anchor_links="right"
+extra.tagline = "Everything you need to know."
 +++
 
-test
+# Strategy
+
+You want to get more users.
+
+# How to?
+
+Pay me ❤️

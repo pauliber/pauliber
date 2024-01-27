@@ -1,13 +1,18 @@
 html, body {
     background-color: #6fcdbd;
-    margin: 1rem;
-    padding: 0;
-    padding-top: 0rem !important;
+    margin: 0rem 1rem;
+    padding-top: 3vh;
+}
+
+body .home {
+  padding-top: auto !important;
+  height: 100%;
 }
 html {
   font-family: Montserrat, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  overflow-y: auto
+  overflow-y: auto;
+  //height: 100%;
 }
 #presentation {
   @font-face {
@@ -54,11 +59,11 @@ html {
 
   @media screen and (max-width: 992px) {
     h1 {
-      font-size: 8vw
+      font-size: 7vw
     }
 
     h2 {
-      font-size: 2.5rem
+      font-size: 5vw
     }
   }
 
@@ -79,7 +84,7 @@ html {
 
   main {
     display: flex;
-    margin-top: 20vh
+    height: 100%;
   }
 
   main .column.left {
@@ -96,9 +101,9 @@ html {
     margin-top: 0
   }
 
-  main .column.right .links {
+  main .column .links {
     margin-top: 2.5rem;
-    font-size: 1.5rem
+    font-size: 2.5rem;
   }
 
   main .column.right .links a {
@@ -106,10 +111,18 @@ html {
     text-decoration: none
   }
 
+  main .column.left .links a {
+    margin-left: 0.5rem;
+    text-decoration: none
+  }
+  main .column.left .links {
+    margin-right: 2rem;
+    margin-top: 0;
+    }
+
   @media screen and (max-width: 992px) {
     main {
       flex-direction: column;
-      margin-top: 0
     }
 
     main .column.left {
@@ -136,4 +149,48 @@ html {
       flex-direction: column
     }
   }
+}
+
+.article-card {
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+  padding: 20px;
+  height: 180px;
+  width: 300px;
+  cursor: pointer;
+}
+.article-card:hover {
+  .article-card-title {
+    animation: shine 0.4s linear;
+  }
+
+  border-radius: 20px;
+  border-color:orange;
+}
+@keyframes shine {
+  0% {
+    color: white;
+  }
+  50% {
+    color: orange;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.article-card:hover .article-card-title h1 {
+  color: orange !important
+}
+.article-card-title {
+  font-size: 2rem !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.blog-back {
+  margin: 0 0 0 0;
+  position: absolute;
 }
