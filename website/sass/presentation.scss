@@ -2,7 +2,7 @@ $orange: rgb(230,157,79);
 
 
 html, body {
-    background-color: #6fcdbd;
+    background-color: #377B6F;
     margin: 0rem 1rem;
     padding-top: 3vh;
 }
@@ -157,19 +157,26 @@ html {
   }
 }
 
+
 .articles {
-  display: flex;
+  @media (width > 768px) {
+    display: grid;
+    gap: 10px;
+    grid: 230px / 320px auto auto;
+  }
   align-self: center;
 }
 .article-card {
+  margin: 10px;
   font-size: 1.5rem;
   border-radius: 20px;
   border-color: white;
   border-width: 5px;
   border-style: solid;
   padding: 20px;
-  height: 190px;
+  height: 230px;
   width: 320px;
+  position: relative;
   cursor: pointer;
 }
 .article-card:hover {
@@ -210,10 +217,10 @@ html {
 
 .article-card-seemore {
   font-size: 16px;
-  position: inherit;
   font-style: italic;
-  float:right;
-  margin-right: -6px;
+  position: absolute;
+  bottom: 0;
+  right: 25px;
 }
 
 .blog-back {

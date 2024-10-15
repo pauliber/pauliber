@@ -30,6 +30,6 @@ links = [
 name = "Pauline BERGER"
 
 [extra.theme]
-background = "#6FCDBD"
+background = "#377B6F"
 foreground = "#FFF"
 hover = "#333"
